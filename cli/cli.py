@@ -1,5 +1,4 @@
 import typer
-
 from commands import hello, version
 
 # Create the root CLI app
