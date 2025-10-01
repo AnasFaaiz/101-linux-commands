@@ -12,7 +12,6 @@ def test_cli_help():
         capture_output=True,
         text=True,
         cwd=os.path.dirname(__file__),
-
     )
     assert result.returncode == 0
     assert "101 Linux Commands CLI" in result.stdout
@@ -25,7 +24,6 @@ def test_hello_command():
         capture_output=True,
         text=True,
         cwd=os.path.dirname(__file__),
-
     )
     assert result.returncode == 0
     assert "Hello, World!" in result.stdout
@@ -38,7 +36,6 @@ def test_hello_command_with_name():
         capture_output=True,
         text=True,
         cwd=os.path.dirname(__file__),
-
     )
     assert result.returncode == 0
     assert "Hello, Linux!" in result.stdout
@@ -63,7 +60,6 @@ def test_version_command():
         capture_output=True,
         text=True,
         cwd=os.path.dirname(__file__),
-
     )
     assert result.returncode == 0
     assert "101-linux v" in result.stdout
@@ -77,11 +73,9 @@ def test_version_show_command():
         capture_output=True,
         text=True,
         cwd=os.path.dirname(__file__),
-
     )
     assert result.returncode == 0
     assert "101-linux v0.1.0" in result.stdout
-
 
 
 if __name__ == "__main__":
