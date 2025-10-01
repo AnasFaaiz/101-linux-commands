@@ -5,6 +5,7 @@ import os
 import subprocess
 import sys
 
+
 def test_cli_help():
     """Test that the CLI shows help."""
     result = subprocess.run(
