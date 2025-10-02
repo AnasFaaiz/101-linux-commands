@@ -11,10 +11,10 @@ app.add_typer(hello.app, name="hello")
 app.add_typer(version.app, name="version")
 
 
-
 def main() -> None:
     """CLI entry point."""
     app()
+
 
 if __name__ == "__main__":
     app()
