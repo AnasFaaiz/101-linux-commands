@@ -25,17 +25,13 @@ def _get_available_commands() -> List[Dict[str, str]]:
         },
         {
             "name": "cat",
-            "description": (
-                "Concatenate files and print on the standard " "output"
-            ),
+            "description": ("Concatenate files and print on the standard " "output"),
         },
         {"name": "head", "description": "Output the first part of files"},
         {"name": "tail", "description": "Output the last part of files"},
         {
             "name": "sed",
-            "description": (
-                "Stream editor for filtering and transforming " "text"
-            ),
+            "description": ("Stream editor for filtering and transforming " "text"),
         },
     ]
 

@@ -3,7 +3,8 @@ CLI entry point for the 101 Linux Commands application.
 """
 
 import typer
-from commands import hello, list, show, search, version
+
+from commands import hello, list, search, show, version
 
 app = typer.Typer(help="101 Linux Commands CLI 🚀")
 app.add_typer(hello.app, name="hello")
